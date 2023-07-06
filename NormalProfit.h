@@ -95,7 +95,7 @@ public:
 			<< " == [" << (gameTimePerMonth * gameTime - (botPrice + vpn)) << "]"
 			<< "\n\n ****************************************\n\n";
 
-		(goldSellPrice - botPrice) > gameTimeSellPrice ? std::cout << " The best Option is : ( GOLD )" << (goldSellPrice - botPrice) << " T\n" : std::cout << " The bets obtion is (GAME TIME x60): " << gameTimeSellPrice << " T\n";
+		(goldSellPrice - botPrice) > gameTimeSellPrice ? std::cout << " The best Option is ( GOLD ): " << (goldSellPrice - botPrice) << " T\n" : std::cout << " The bets obtion is (GAME TIME x60): " << gameTimeSellPrice << " T\n";
 		std::cout << "\n\n ****************************************\n\n";
 
 	}
