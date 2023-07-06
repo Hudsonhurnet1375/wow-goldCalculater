@@ -1,4 +1,4 @@
-// NormalProfit.h
+	// NormalProfit.h
 // Calculate Normal Profit without using bot 
 
 #include <iostream>
@@ -62,7 +62,7 @@ public:
 		std::cout << "\n GOld per month: " << goldPerMonth;
 
 		//gold sell price
-		goldSellPrice = (goldPerMonth / 1000 * gold) - vpn;
+		goldSellPrice = (static_cast<double>(goldPerMonth) / 1000 * static_cast<double>(gold)) - static_cast<double>(vpn);
 		std::cout << "\n Gold sell price: " << goldSellPrice << " T" << std::endl;
 
 		//gold price with bot
@@ -85,13 +85,13 @@ public:
 		//game time per month
 		double gameTimePerMonth;
 		gameTimePerMonth = tokenPerMonth / 2;
-		std::cout << "\n Game Time x60 per month (x2): " << gameTimePerMonth
+		std::cout << "\n Game Time x60 per month : " << gameTimePerMonth
 			<< " == [" << static_cast<int>(tokenPerMonth) / 2 << "]";
 
 		// game time sell price
 		int gameTimeSellPrice;
 		gameTimeSellPrice = static_cast<int>(gameTimePerMonth) * gameTime - (botPrice + vpn);
-		std::cout << "\n Game Time x60 sell price (x2): " << gameTimeSellPrice << " T (GAME TIME x60)"
+		std::cout << "\n Game Time x60 sell price : " << gameTimeSellPrice << " T (GAME TIME x60)"
 			<< " == [" << (gameTimePerMonth * gameTime - (botPrice + vpn)) << "]"
 			<< "\n\n ****************************************\n\n";
 
@@ -130,13 +130,13 @@ public:
 		//game time per month
 		double gameTimePerMonth;
 		gameTimePerMonth = tokenPerMonth / 2;
-		std::cout << "\n Game Time x60 per month (x2): " << gameTimePerMonth
+		std::cout << "\n Game Time x60 per month : " << gameTimePerMonth
 			<< " == [" << static_cast<int>(tokenPerMonth) / 2 << "]";
 
 		// game time sell price
 		int gameTimeSellPrice;
 		gameTimeSellPrice = static_cast<int>(gameTimePerMonth) * gameTime - vpn;
-		std::cout << "\n Game Time x60 sell price (x2): " << gameTimeSellPrice << " T (Game TME x60)"
+		std::cout << "\n Game Time x60 sell price : " << gameTimeSellPrice << " T (Game TME x60)"
 		<< " == [" << (gameTimePerMonth * gameTime - vpn) << "]"
 			<< "\n\n ****************************************\n\n";
 
