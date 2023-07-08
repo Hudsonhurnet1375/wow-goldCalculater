@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-
+	system("color a");
 	cout << fixed << setprecision(2);	
 	unsigned int condition{1};
 	int token{0};
